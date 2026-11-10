@@ -1,14 +1,14 @@
 import 'package:quiz_app/models/quiz_questions.dart';
 const questions = [
   QuizQuestion('Who runs Arkham City with Hugo Strange in Batman: Arkham City?', [
-    'The Joker',
-    'Two-Face',
     'Ra\'s al Ghul',
+    'Two-Face',
+    'The Joker',
     'The Penguin'
   ]),
   QuizQuestion('Who was Harry Potters godfather?', [
-    'Rubeus Hagrid',
     'Sirius Black',
+    'Rubeus Hagrid',
     'Severus Snape',
     'Albus Dumbledore'
   ]),
@@ -19,16 +19,16 @@ const questions = [
     'Damian Wayne'
   ]),
   QuizQuestion('What device does Spider-Man create to control his Archaniad levels in Spiderman: Brand New Day?', [
-    'Spider-Tracer',
-    'Spider-Bot',
     'Universal Inhibitor',
+    'Spider-Bot',
+    'Spider-Tracer',
     'Spider-Serum'
   ]),
   QuizQuestion('Who was known as the Bay Harbor Butcher in the TV show Dexter?', [
-    'Debra Morgan',
+    'Dexter Morgan',
     'James Doakes',
     'Maria LaGuerta',
-    'Dexter Morgan'
+    'Debra Morgan'
   ]),
   QuizQuestion('Who does Nathan Drake fight in Henry Avery\'s treasure in Uncharted 4: A Thief\'s End?', [
     'Rafe Adler',
@@ -37,27 +37,27 @@ const questions = [
     'Sir Francis Drake'
   ]),
   QuizQuestion('Which bounty hunter does Batman take out first in Batman: Arkham Origins?', [
-    'Deadshot',
+    'Killer Croc',
     'Electrocutioner',
     'Deathstroke',
-    'Killer Croc'
+    'Deadshot'
   ]),
   QuizQuestion('How does Spider-Man obtain the symboite in Marvels Spider-Man 2?', [
-    'He finds it in a secret lab',
-    'He steals it from Oscorp',
     'He is given it by Harry Osborn to save Spider-Man',
+    'He steals it from Oscorp',
+    'He finds it in a lab',
     'He finds it in a meteor crash'
   ]),
-  QuizQuestion('What sun weakens Suoerman in the DC Universe?', [
+  QuizQuestion('What sun weakens Superman in the DC Universe?', [
     'Red Sun',
     'Yellow Sun',
     'Blue Sun',
     'Green Sun'
   ]),
   QuizQuestion('Who does Franklin Saint give his iconic brick by brick speech to in the TV show Snowfall?', [
-    'Teddy McDonald',
+    'Leon Simmons',
     'Andre Wright',
     'Kevin Hamilton',
-    'Leon Simmons'
+    'Teddy McDonald'
   ]),
 ];
