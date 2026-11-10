@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
 class QuestionsSummary extends StatelessWidget {
-  const QuestionsSummary({
-    super.key,
-    required this.summaryData,
-  });
+  const QuestionsSummary({super.key, required this.summaryData});
 
   final List<Map<String, Object>> summaryData;
   @override
   Widget build(context) {
     return Column(
       children: summaryData.map((data) {
+        // Check if the user's answer is correct
         final isCorrect =
             data['user_answer'] == data['correct_answer'];
         return Padding(
@@ -17,9 +15,10 @@ class QuestionsSummary extends StatelessWidget {
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              // Larger colored question number
               Container(
-                width: 30,
-                height: 30,
+                width: 35,
+                height: 35,
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
                   color: isCorrect
@@ -28,11 +27,10 @@ class QuestionsSummary extends StatelessWidget {
                   shape: BoxShape.circle,
                 ),
                 child: Text(
-                  ((data['question_index'] as int) + 1)
-                      .toString(),
+                  ((data['question_index'] as int) + 1).toString(),
                   style: const TextStyle(
                     color: Color.fromARGB(255, 45, 0, 90),
-                    fontSize: 18,
+                    fontSize: 20,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -46,23 +44,23 @@ class QuestionsSummary extends StatelessWidget {
                       data['question'] as String,
                       style: const TextStyle(
                         color: Colors.white,
-                        fontSize: 15,
+                        fontSize: 16,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    const SizedBox(height: 4),
+                    const SizedBox(height: 5),
                     Text(
                       data['user_answer'] as String,
                       style: const TextStyle(
                         color: Colors.lightBlueAccent,
-                        fontSize: 14,
+                        fontSize: 15,
                       ),
                     ),
                     Text(
                       data['correct_answer'] as String,
                       style: const TextStyle(
                         color: Colors.pinkAccent,
-                        fontSize: 14,
+                        fontSize: 15,
                       ),
                     ),
                   ],
